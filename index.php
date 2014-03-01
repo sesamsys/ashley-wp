@@ -32,6 +32,12 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
+			<div class="pagination p">
+            	<span class="previous"><?php next_posts_link( '&laquo; Previous' ); ?></span>
+            	<span class="page-numbers"><?php echo $paged.'/'.$wp_query->max_num_pages; ?></span>
+            	<span class="next"><?php previous_posts_link( 'Next &raquo;' )?></span>
+          	</div>
+
 		<?php else : ?>
 
 		 <!-- The very first "if" tested to see if there were any Posts to -->
