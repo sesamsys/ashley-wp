@@ -192,3 +192,47 @@
         padding-top: 2em;
         padding-bottom: 2em;
       }
+
+      /* comments */
+
+      aside.comments {
+        margin-top: 4em;
+      }
+      
+      ol.comments {
+        list-style: none;
+        margin-top: 1em;
+      }
+      
+      ol.comments, ol.comments a {
+        color: #aaa;
+      }
+      
+      li.comment {
+        display: block;
+        line-height: 2em;
+        padding: 0.5em 1em;
+      }
+
+      ol.comments li.comment img.avatar {
+        display: block;
+        float: left;
+        width: 2em;
+        height: 2em;
+        margin-right: 1em;
+        border-radius: 1em;
+      }
+      
+      .comments .comment-text a {
+        color: #444;
+      }
+      
+      .comment-text {
+        display: block;
+        margin-left: 3em;
+      }
+      
+      .comments .children {
+        padding-left: 1em;
+        border-left: 1px solid #ddd;
+      }
