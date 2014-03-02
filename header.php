@@ -2,13 +2,13 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
-        <title><?php wp_title(); ?></title>
+        <title><?php wp_title(''); ?></title>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
         <meta name="text:GoogleWebFont" content="Gentium Book Basic"/>
     	<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
-        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
     </head>

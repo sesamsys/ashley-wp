@@ -39,7 +39,10 @@
         font-weight: 700;
       }
       
-      p, ul, ol { margin-top: 1em; }
+      p, ul, ol { 
+        margin-top: 1em; 
+        padding: 0;
+      }
       
             @media screen and (min-width: 480px) {
               h1, .h1 { font-size: 48px; }
@@ -119,6 +122,20 @@
         margin-left: 2em;
       }
       
+      .post footer ul, .post footer ol {
+        margin: 0;
+      }
+      
+      .quote blockquote {
+        padding: 0;
+        border: none;
+        font-style: italic;
+      }
+      
+      .quote .comments {
+        text-align: right;
+      }
+
       .post footer {
         padding: 0;
         margin-top: 1em;
@@ -132,6 +149,16 @@
       
       .post footer a:hover {
         color: #999;
+      }
+
+      .post footer .comments {
+        float: right;
+        margin-right: 0;
+      }
+      
+      .post footer ul li {
+        display: inline-block;
+        margin-right: 1em;
       }
 
       .pagination {
@@ -159,4 +186,9 @@
       
       .pagination .next {
         float: right;
+      }
+
+      footer.wrap {
+        padding-top: 2em;
+        padding-bottom: 2em;
       }

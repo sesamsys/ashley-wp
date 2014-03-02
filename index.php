@@ -5,7 +5,7 @@ get_header(); ?>
 	<div class="content wrap">
 		<?php if ( have_posts() ) : ?>
 
-			<?php /* The loop */ ?>
+			<?php /* The Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article>
@@ -14,24 +14,24 @@ get_header(); ?>
 
 			 <h2><a class="post-title" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-
 			 <!-- Display the Post's content in a div box. -->
 
 			 <div class="post">
 			   	<?php the_content(); ?>
 
 				 <footer>
-				 	<!-- Display the date in the date format configured in WP options and a link to other posts by this posts author. -->
-
-			 		<?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?>
-
+				 	<ul class="small">
+				 		<!-- Display the date and time as well as a link to other posts by this posts author. -->
+			 			<li><?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?></li>
+			 			<!-- Display the number of comments. -->
+			 			<li class="comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></li>
+			 		</ul>
 				 </footer>
 			</div>
 
 			</article>
 
-
-			 <!-- Stop The Loop (but note the "else:" - see next line). -->
+			 <!-- Stop The Loop (but note the "else:"). -->
 
 			<?php endwhile; ?>
 
@@ -47,7 +47,7 @@ get_header(); ?>
 
 		 <!-- The very first "if" tested to see if there were any Posts to -->
 		 <!-- display.  This "else" part tells what do if there weren't any. -->
-		 <p>Oopsy-daisy, there are no posts!</p>
+		 <p>Oopsy-daisy, there are no posts to show!</p>
 
 		<?php endif; ?>
 
