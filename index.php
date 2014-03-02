@@ -8,9 +8,11 @@ get_header(); ?>
 			<?php /* The loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<article>
+
 			 <!-- Display the Title as a link to the Post's permalink. -->
 
-			 <h3><a class="post-title" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+			 <h2><a class="post-title" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
 
 			 <!-- Display the Post's content in a div box. -->
@@ -21,11 +23,12 @@ get_header(); ?>
 				 <footer>
 				 	<!-- Display the date in the date format configured in WP options and a link to other posts by this posts author. -->
 
-			 		<?php the_time() ?> by <?php the_author_posts_link() ?>
+			 		<?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?>
 
 				 </footer>
+			</div>
 
-			</div> <!-- closes the first div box -->
+			</article>
 
 
 			 <!-- Stop The Loop (but note the "else:" - see next line). -->
