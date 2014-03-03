@@ -39,13 +39,9 @@ get_header(); ?>
 
 			<?php comments_template(); ?> 
 
-			<div class="pagination p">
-				
-            	<span class="previous"><?php get_next_posts_link( '&laquo; Previous' ); ?></span>
-            	<span class="page-numbers"><?php echo $paged.'/'.$wp_query->max_num_pages; ?></span>
-            	<span class="next"><?php get_previous_posts_link( 'Next &raquo;' )?></span>
-            	<?php if ($paged == 1) : { echo "<span class=\"next\">Next &raquo;</span>";} endif; ?>
-          	</div>
+			<!-- Load paging. -->
+
+			<?php ashley_paging_nav(); ?> 
 
 		<?php else : ?>
 

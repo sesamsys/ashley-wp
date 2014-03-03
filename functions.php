@@ -26,3 +26,37 @@ function ashley_comment($comment, $args, $depth) {
 <?php  
     }
 ?>
+
+<?php
+if ( ! function_exists( 'ashley_paging_nav' ) ) :
+/**
+ * Display navigation to next/previous set of posts when applicable.
+ *
+ * @return void
+ */
+function ashley_paging_nav() {
+	global $wp_query;
+	global $paged;
+	// Don't print empty markup if there's only one page.
+	if ( $wp_query->max_num_pages < 2 )
+		return;
+	?>
+	<div class="pagination p">
+		<?php if ( get_next_posts_link() ) : ?>
+    		<span class="previous"><?php next_posts_link( '&laquo; Previous' ); ?></span>
+    	<?php else : ?>
+    		<span class="previous">&laquo; Previous</span>
+    	<?php endif; ?>
+
+    	<span class="page-numbers"><?php echo $paged.'/'.$wp_query->max_num_pages; ?></span>
+    	
+    	<?php if ( get_previous_posts_link() ) : ?>
+    		<span class="next"><?php previous_posts_link( 'Next &raquo;' )?></span>
+    	<?php else : ?>
+    		<span class="next">Next &raquo;</span>
+    	<?php endif; ?>
+    </div>
+	<?php
+}
+endif;
+?>
