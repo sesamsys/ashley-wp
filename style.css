@@ -255,7 +255,6 @@
         vertical-align: top;
       }
 
-      button,
       input,
       textarea {
         border: 1px solid #ddd;
@@ -298,8 +297,8 @@
       input[type="submit"],
       input[type="button"],
       input[type="reset"] {
-        background: none;
-        border: 1px solid #ddd;
+        background: #eee;
+        border: 1px solid #eee;
         border-radius: 0.25em;
         color: #000;
         height: 3em;
@@ -316,7 +315,6 @@
       input[type="submit"]:focus,
       input[type="button"]:focus,
       input[type="reset"]:focus {
-        background: #eee; /* Old browsers */
         border: 1px solid #09b;
         outline: none;
       }
