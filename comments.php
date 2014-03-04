@@ -19,7 +19,7 @@ if ( post_password_required() )
 	$comments_args = array(
 		// remove "Text or HTML to be displayed after the set of comment fields"
         'comment_notes_after' => '',
-	);
+    );
 
 	comment_form( $comments_args ); 
 

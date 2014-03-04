@@ -1,320 +1,395 @@
-      body {
-        color: #444;
-        background: #fff;
-        font-family: 'Gentium Book Basic', Georgia, serif;
-        font-size: 100%;
-        line-height: 1.5;
-        font-weight: 400;
-      }
-      
-      
-      h1, h2, h3, .h1, .h2, .h3 {
-        font-weight: 400;
-        line-height: 1.25;
-        margin-top: .5em;
-      }
-      
-      h1, .h1 {
-        font-size: 32px;
-      }
-      
-      h2, .h2 {
-        font-size: 24px;
-      }
-      
-      h3, .h3 {
-        font-size: 20px;
-      }
-      
-      p, .p, ul, ol {
-        font-size: 18px;
-      }
-      
-      small, .small {
-        font-size: 14px;
-      }
-      
-      strong, .strong {
-        font-weight: 700;
-      }
-      
-      p, ul, ol { 
-        margin-top: 1em; 
-        padding: 0;
-      }
-      
-            @media screen and (min-width: 480px) {
-              h1, .h1 { font-size: 48px; }
-              h2, .h2 { font-size: 32px; }
-              h3, .h3 { font-size: 24px; }
-              p, .p, ul, ol { font-size: 20px;}
-              small, .small { font-size: 16px;}
-            }
-            
-            @media screen and (min-width: 640px) {
-              h1, .h1 { font-size: 64px; }
-              h2, .h2 { font-size: 48px; } 
-              h3, .h3 { font-size: 32px; }
-            }
+body {
+  color: #444;
+  background: #fff;
+  font-family: 'Gentium Book Basic', Georgia, serif;
+  font-size: 100%;
+  line-height: 1.5;
+  font-weight: 400;
+}
 
-      .wrap {
-        width: 90%;
-        padding: 0 5%;
-        max-width: 48em;
-        margin: 0 auto;
-        overflow: hidden;
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: .5em;
+}
+
+h1, .h1 {
+  font-size: 32px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+}
+
+h3, .h3 {
+  font-size: 20px;
+}
+
+p, .p, ul, ol {
+  font-size: 18px;
+}
+
+small, .small {
+  font-size: 14px;
+}
+
+strong, .strong {
+  font-weight: 700;
+}
+
+p, ul, ol { 
+  margin-top: 1em; 
+  padding: 0;
+}
+
+      @media screen and (min-width: 480px) {
+        h1, .h1 { font-size: 48px; }
+        h2, .h2 { font-size: 32px; }
+        h3, .h3 { font-size: 24px; }
+        p, .p, ul, ol { font-size: 20px;}
+        small, .small { font-size: 16px;}
+      }
+      
+      @media screen and (min-width: 640px) {
+        h1, .h1 { font-size: 64px; }
+        h2, .h2 { font-size: 48px; } 
+        h3, .h3 { font-size: 32px; }
       }
 
-      article {
-        margin-top: 4em;
-      }
+.wrap {
+  width: 90%;
+  padding: 0 5%;
+  max-width: 48em;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-      a {
-        color: #09b;
-        text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
+article {
+  margin-top: 4em;
+}
 
-      header {
-        width: 90%;
-        padding: 2em 5% 0;
-        max-width: 48em;
-        margin: 0 auto;
-        overflow: hidden;
-      }
+a {
+  color: #09b;
+  text-decoration: none;
+}
 
-      header h1, header p {
-        margin: 0;
-      }
-      
-      header a, a.post-title {
-        color: #444;
-      }
-      
-      a.post-title:hover {
-        text-decoration: none;
-        color: #09b;
-      }
-      
-      header a:hover {
-        text-decoration: none;
-      }
+a:hover {
+  text-decoration: underline;
+}
 
-      .post img, {
-        max-width: 100%;
-      }
-      
-      .post iframe, .video object {
-        width: 100%;
-        max-width: 100%;
-      }
-      
-      .post blockquote {
-        padding-left: 1em;
-        border-left: 1px solid #ddd;
-      }
-      
-      .post ul, .post ol {
-        margin-left: 2em;
-      }
-      
-      .post footer ul, .post footer ol {
-        margin: 0;
-      }
-      
-      .quote blockquote {
-        padding: 0;
-        border: none;
-        font-style: italic;
-      }
-      
-      .quote .comments {
-        text-align: right;
-      }
+header {
+  width: 90%;
+  padding: 2em 5% 2em;
+  max-width: 48em;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
-      .post footer {
-        padding: 0;
-        margin-top: 1em;
-        color: #aaa;
-        font-style: italic;
-      }
-      
-      .post footer a {
-        color: #aaa;
-      }
-      
-      .post footer a:hover {
-        color: #999;
-      }
+header h1, header p {
+  margin: 0;
+}
 
-      .post footer .comments {
-        float: right;
-        margin-right: 0;
-      }
-      
-      .post footer ul li {
-        display: inline-block;
-        margin-right: 1em;
-      }
+header a, a.post-title {
+  color: #444;
+}
 
-      .pagination {
-        margin-top: 4em;
-        text-align: center;
-        line-height: 3em;
-        overflow: hidden;
-      }
+a.post-title:hover {
+  text-decoration: none;
+  color: #09b;
+}
 
-      .pagination a {
-        display: block;
-        height: 3em;
-        padding: 0 1em;
-        border-radius: 0.25em;
-      }
-      
-      .pagination a:hover {
-        background: #eee;
-        text-decoration: none;
-      }
-      
-      .pagination .previous {
-        float: left;
-      }
-      
-      .pagination .next {
-        float: right;
-      }
+header a:hover {
+  text-decoration: none;
+}
 
-      footer.wrap {
-        padding-top: 2em;
-        padding-bottom: 2em;
-      }
+.post img, {
+  max-width: 100%;
+}
 
-      /* comments */
+.post iframe, .video object {
+  width: 100%;
+  max-width: 100%;
+}
 
-      aside.comments {
-        margin-top: 4em;
-      }
-      
-      ol.comments {
-        list-style: none;
-        margin-top: 1em;
-      }
-      
-      ol.comments, ol.comments a {
-        color: #aaa;
-      }
-      
-      li.comment {
-        display: block;
-        line-height: 2em;
-        padding: 0.5em 1em;
-      }
+.post blockquote {
+  padding-left: 1em;
+  border-left: 1px solid #ddd;
+}
 
-      ol.comments li.comment img.avatar {
-        display: block;
-        float: left;
-        width: 2em;
-        height: 2em;
-        margin-right: 1em;
-        border-radius: 1em;
-      }
-      
-      .comments .comment-text a {
-        color: #444;
-      }
-      
-      .comment-text {
-        display: block;
-        margin-left: 3em;
-      }
-      
-      .comments .children {
-        padding-left: 1em;
-        border-left: 1px solid #ddd;
-      }
+.post ul, .post ol {
+  margin-left: 2em;
+}
 
-      button,
-      input,
-      select,
-      textarea {
-        font-size: 100%;
-        margin: 0;
-        vertical-align: baseline;
-      }
+.post footer ul, .post footer ol {
+  margin: 0;
+}
 
-      button,
-      input {
-        line-height: normal;
-      }
+.quote blockquote {
+  padding: 0;
+  border: none;
+  font-style: italic;
+}
 
-      textarea {
-        overflow: auto;
-        vertical-align: top;
-      }
+.quote .comments {
+  text-align: right;
+}
 
-      input,
-      textarea {
-        border: 1px solid #ddd;
-        border-radius: 0.25em;
-        font-family: inherit;
-        padding: 5px;
-      }
+.post footer {
+  padding: 0;
+  margin-top: 1em;
+  color: #aaa;
+  font-style: italic;
+}
 
-      input:focus,
-      textarea:focus {
-        border: 1px solid #09b;
-        outline: 0;
-      }
+.post footer a {
+  color: #aaa;
+}
 
-      .comment-form [for="author"],
-      .comment-form [for="email"],
-      .comment-form [for="url"],
-      .comment-form [for="comment"] {
-        float: left;
-        padding: 5px 0;
-        width: 120px;
-      }
+.post footer a:hover {
+  color: #999;
+}
 
-      .comment-form .required {
-        color: #09b;
-      }
+.post footer .comments {
+  float: right;
+  margin-right: 0;
+}
 
-      .comment-form input[type="text"],
-      .comment-form input[type="email"],
-      .comment-form input[type="url"] {
-        max-width: 270px;
-        width: 60%;
-      }
+.post footer ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
 
-      .comment-form textarea {
-        width: 80%;
-      }
+.pagination {
+  margin-top: 4em;
+  text-align: center;
+  line-height: 3em;
+  overflow: hidden;
+}
 
-      button,
-      input[type="submit"],
-      input[type="button"],
-      input[type="reset"] {
-        background: #eee;
-        border: 1px solid #eee;
-        border-radius: 0.25em;
-        color: #000;
-        height: 3em;
-        padding: 0 1em;
-        display: inline-block;
-        text-decoration: none;
-      }
+.pagination a {
+  display: block;
+  height: 3em;
+  padding: 0 1em;
+  border-radius: 0.25em;
+}
 
-      button:hover,
-      button:focus,
-      input[type="submit"]:hover,
-      input[type="button"]:hover,
-      input[type="reset"]:hover,
-      input[type="submit"]:focus,
-      input[type="button"]:focus,
-      input[type="reset"]:focus {
-        border: 1px solid #09b;
-        outline: none;
-      }
+.pagination a:hover {
+  background: #eee;
+  text-decoration: none;
+}
+
+.pagination .previous {
+  float: left;
+}
+
+.pagination .next {
+  float: right;
+}
+
+footer.wrap {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* comments */
+
+aside.comments {
+  margin-top: 4em;
+}
+
+ol.comments {
+  list-style: none;
+  margin-top: 1em;
+}
+
+ol.comments, ol.comments a {
+  color: #aaa;
+}
+
+li.comment {
+  display: block;
+  line-height: 2em;
+  padding: 0.5em 1em;
+}
+
+ol.comments li.comment img.avatar {
+  display: block;
+  float: left;
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+  border-radius: 1em;
+}
+
+.comments .comment-text a {
+  color: #444;
+}
+
+.comment-text {
+  display: block;
+  margin-left: 3em;
+}
+
+.comments .children {
+  padding-left: 1em;
+  border-left: 1px solid #ddd;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+input,
+textarea {
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+  font-family: inherit;
+  padding: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #09b;
+  outline: 0;
+}
+
+.comment-form [for="author"],
+.comment-form [for="email"],
+.comment-form [for="url"],
+.comment-form [for="comment"] {
+  float: left;
+  padding: 5px 0;
+  width: 120px;
+}
+
+.comment-form .required {
+  color: #09b;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+  max-width: 270px;
+  width: 60%;
+}
+
+.comment-form textarea {
+  width: 80%;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  background: none;
+  border: none;
+  border-radius: 0.25em;
+  color: #09b;
+  height: 3em;
+  padding: 0 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button:hover,
+button:focus,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+  background: #eee;
+  outline: none;
+}
+
+.navbar {
+  background-color: #eee;
+  margin: 0;
+  width: 100%;
+}
+
+
+
+ul.nav-menu,
+div.nav-menu > ul {
+  margin: 0;
+  padding: 0 40px 0 0;
+}
+
+.nav-menu li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-menu li a {
+  color: #141412;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover {
+  background-color: #220e10;
+  color: #fff;
+}
+
+.nav-menu .sub-menu,
+.nav-menu .children {
+  background-color: #220e10;
+  border: 2px solid #f7f5e7;
+  border-top: 0;
+  display: none;
+  padding: 0;
+  position: absolute;
+  left: -2px;
+  z-index: 99999;
+}
+
+.nav-menu .sub-menu ul,
+.nav-menu .children ul {
+  border-left: 0;
+  left: 100%;
+  top: 0;
+}
+
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+  color: #fff;
+  margin: 0;
+  width: 200px;
+}
+
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover {
+  background-color: #09b;
+}
+
+ul.nav-menu li:hover > ul,
+.nav-menu ul li:hover > ul {
+  display: block;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+  color: #09b;
+}

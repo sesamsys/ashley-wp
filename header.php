@@ -19,3 +19,8 @@
 				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 			</a>
 		</header>
+		<div id="navbar" class="navbar">
+			<nav id="site-navigation" class="navigation main-navigation wrap" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			</nav>
+		</div>

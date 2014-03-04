@@ -62,3 +62,9 @@ function ashley_paging_nav() {
 }
 endif;
 ?>
+<?php
+function ashley_register_menu() {
+	register_nav_menu( 'primary', __( 'Navigation Menu' ) );
+}
+add_action( 'init', 'ashley_register_menu' );
+?>
