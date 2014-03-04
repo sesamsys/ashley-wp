@@ -8,7 +8,7 @@
       }
       
       
-      h1, h2, .h1, .h2 {
+      h1, h2, h3, .h1, .h2, .h3 {
         font-weight: 400;
         line-height: 1.25;
         margin-top: .5em;
@@ -24,7 +24,6 @@
       
       h3, .h3 {
         font-size: 20px;
-        margin-bottom: 0;
       }
       
       p, .p, ul, ol {
@@ -235,4 +234,89 @@
       .comments .children {
         padding-left: 1em;
         border-left: 1px solid #ddd;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font-size: 100%;
+        margin: 0;
+        vertical-align: baseline;
+      }
+
+      button,
+      input {
+        line-height: normal;
+      }
+
+      textarea {
+        overflow: auto;
+        vertical-align: top;
+      }
+
+      button,
+      input,
+      textarea {
+        border: 1px solid #ddd;
+        border-radius: 0.25em;
+        font-family: inherit;
+        padding: 5px;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1px solid #09b;
+        outline: 0;
+      }
+
+      .comment-form [for="author"],
+      .comment-form [for="email"],
+      .comment-form [for="url"],
+      .comment-form [for="comment"] {
+        float: left;
+        padding: 5px 0;
+        width: 120px;
+      }
+
+      .comment-form .required {
+        color: #09b;
+      }
+
+      .comment-form input[type="text"],
+      .comment-form input[type="email"],
+      .comment-form input[type="url"] {
+        max-width: 270px;
+        width: 60%;
+      }
+
+      .comment-form textarea {
+        width: 80%;
+      }
+
+      button,
+      input[type="submit"],
+      input[type="button"],
+      input[type="reset"] {
+        background: none;
+        border: 1px solid #ddd;
+        border-radius: 0.25em;
+        color: #000;
+        height: 3em;
+        padding: 0 1em;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      button:hover,
+      button:focus,
+      input[type="submit"]:hover,
+      input[type="button"]:hover,
+      input[type="reset"]:hover,
+      input[type="submit"]:focus,
+      input[type="button"]:focus,
+      input[type="reset"]:focus {
+        background: #eee; /* Old browsers */
+        border: 1px solid #09b;
+        outline: none;
       }

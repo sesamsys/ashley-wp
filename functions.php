@@ -1,5 +1,4 @@
 <?php
-
 add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
 function baw_hack_wp_title_for_home( $title )
 {
@@ -8,9 +7,14 @@ function baw_hack_wp_title_for_home( $title )
   }
   return $title;
 }
-
 ?>
 <?php
+if ( ! function_exists( 'ashley_comment' ) ) :
+/**
+ * List comments.
+ *
+ * @return void
+ */
 function ashley_comment($comment, $args, $depth) {
    $GLOBALS['comment'] = $comment; ?>
    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
@@ -23,10 +27,10 @@ function ashley_comment($comment, $args, $depth) {
       	 <?php echo comment_text() ?>
       </span>
      </div>
-<?php  
-    }
+	<?php  
+}
+endif;
 ?>
-
 <?php
 if ( ! function_exists( 'ashley_paging_nav' ) ) :
 /**
@@ -47,9 +51,7 @@ function ashley_paging_nav() {
     	<?php else : ?>
     		<span class="previous">&laquo; Previous</span>
     	<?php endif; ?>
-
     	<span class="page-numbers"><?php echo $paged.'/'.$wp_query->max_num_pages; ?></span>
-    	
     	<?php if ( get_previous_posts_link() ) : ?>
     		<span class="next"><?php previous_posts_link( 'Next &raquo;' )?></span>
     	<?php else : ?>
