@@ -2,11 +2,12 @@
 .cbp-spmenu {
 	background: #444;
 	position: fixed;
+	font-family: Helvetica, sans-serif;
 }
 
 .cbp-spmenu a {
 	display: block;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 300;
 	color: #aaa;
 }

@@ -4,10 +4,13 @@ Info:
       Theme: Ashley-WP
       Author: sesam  [http://sesam.hu]
       For: WordPress  [http://wordpress.org/]
-      Terms: Protected under Creative Commons by-nc-sa.
+      Terms: Protected under Creative Commons.
 
 Source:
       Theme: Ashley v0.5
       Author: Jxnblk  [http://jxnblk.com]
       For: Tumblr  [http://tumblr.com/]
       Terms: Protected under Creative Commons.
+
+Includes sliding menu by Codrops: https://github.com/codrops/Blueprint-SlidePushMenus
+And class helper functions by desandro: https://github.com/desandro/classie

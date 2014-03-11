@@ -325,7 +325,7 @@ input[type="reset"]:focus {
   display: block;
   cursor: pointer;
   float:left;
-  position:fixed;
+  position: fixed;
   z-index:2000;
 }
 
