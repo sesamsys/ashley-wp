@@ -11,13 +11,14 @@
         <meta name="text:GoogleWebFont" content="Gentium Book Basic"/>
     	<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
         <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
     </head>
     <body <?php body_class('cbp-spmenu-push'); ?>>
     	<div class="menuicon">
-    		<div class="button" id="showLeftPush" >
+    		<div class="button" id="showLeft" >
     		<h1>
     			<a href="#"><i class="fa fa-bars"></i></a>
     		</h1>

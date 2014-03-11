@@ -1,14 +1,14 @@
 /* General styles for all menus */
+
 .cbp-spmenu {
 	background: #444;
 	position: fixed;
-	font-family: Helvetica, sans-serif;
+	font-family: Lato, sans-serif;
 }
 
 .cbp-spmenu a {
 	display: block;
 	font-size: 1em;
-	font-weight: 300;
 	color: #aaa;
 }
 
@@ -24,8 +24,8 @@
 	width: 240px;
 	height: 100%;
 	top: 0;
-	z-index: 1000;
 	padding-top: 8em;
+	z-index: 1000;
 }
 
 .cbp-spmenu-vertical a {
@@ -43,23 +43,9 @@
 	left: 0px;
 }
 
-
-/* Push classes applied to the body */
-
-.cbp-spmenu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-}
-
-.cbp-spmenu-push-toright {
-	left: 240px;
-}
-
 /* Transitions */
 
-.cbp-spmenu,
-.cbp-spmenu-push {
+.cbp-spmenu {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
