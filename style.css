@@ -1,3 +1,11 @@
+/*
+Theme Name: Ashley-WP
+Theme URI: https://github.com/sesamsys/ashley-wp
+Description: This is a WordPress port of the Ashley Tumblr theme.
+Author: sesam
+Author URI: http://sesam.hu/about
+*/
+
 body {
   color: #444;
   background: #fff;
@@ -88,6 +96,10 @@ header {
 
 header h1, header p {
   margin: 0;
+}
+
+header p {
+  color: #aaa;
 }
 
 header a, a.post-title {

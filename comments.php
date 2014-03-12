@@ -7,7 +7,7 @@ if ( post_password_required() )
 	return;
 ?>
 
-<aside class="comments">
+<aside id="comments" class="comments">
 	<?php if ( have_comments() ) : ?>
 		<ol class="comments">
 			<?php wp_list_comments('type=comment&callback=ashley_comment'); ?>

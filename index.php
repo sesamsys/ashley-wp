@@ -24,7 +24,11 @@ get_header(); ?>
 				 		<!-- Display the date and time as well as a link to other posts by this posts author. -->
 			 			<li><?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?></li>
 			 			<!-- Display the number of comments. -->
-			 			<li class="comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></li>
+			 			<li class="comments">
+			 				<a href="<?php comments_link(); ?>">
+			 					<?php comments_number('No Comments', 'One Comment', '% Comments' );?>
+			 				</a>
+		 				</li>
 			 		</ul>
 				 </footer>
 			</div>
