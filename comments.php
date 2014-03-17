@@ -10,7 +10,7 @@ if ( post_password_required() )
 <aside id="comments" class="comments">
 	<?php if ( have_comments() ) : ?>
 		<ol class="comments">
-			<?php wp_list_comments('short_ping=true&type=all&callback=ashley_comment'); ?>
+			<?php wp_list_comments('type=comment&callback=ashley_comment'); ?>
 		</ol>
 	<?php endif; // have_comments() ?>
 
