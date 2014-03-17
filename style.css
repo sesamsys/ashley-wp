@@ -216,12 +216,12 @@ ol.comments {
 }
 
 ol.comments, ol.comments a {
-  color: #aaa;
+  color: #444;
 }
 
 li.comment {
   display: block;
-  line-height: 2em;
+  line-height: 1.5em;
   padding: 0.5em 1em;
 }
 
@@ -235,7 +235,7 @@ ol.comments li.comment img.avatar {
 }
 
 .comments .comment-text a {
-  color: #444;
+  color: #aaa;
 }
 
 .comment-text {
@@ -337,10 +337,19 @@ input[type="reset"]:focus {
   display: block;
   cursor: pointer;
   float:left;
-  position: absolute;
+  position: fixed;
   z-index:2000;
 }
 
 div.button a {
+  color: #aaa;
+}
+
+.reply {
+  float: right;
+  margin-right: 0;
+}
+
+.comments .reply a {
   color: #aaa;
 }
