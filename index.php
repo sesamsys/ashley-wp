@@ -21,6 +21,7 @@ get_header(); ?>
 
 				 <footer>
 				 	<ul class="small">
+				 		<?php echo get_the_tag_list('<p class="tag-links">',' ','</p>'); ?>
 				 		<!-- Display the date and time as well as a link to other posts by this posts author. -->
 			 			<li><?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?></li>
 			 			<!-- Display the number of comments. -->
