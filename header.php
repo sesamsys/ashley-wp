@@ -15,6 +15,7 @@
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
+        <?php bloginfo('rss2_url'); ?>
     </head>
     <body <?php body_class('cbp-spmenu-push'); ?>>
     	<div class="menuicon">
