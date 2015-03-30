@@ -8,14 +8,15 @@
         <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/component.css" />
         <script src="<?php bloginfo( 'template_url' ); ?>/modernizr.custom.js"></script>
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-        <meta name="text:GoogleWebFont" content="Gentium Book Basic"/>
-    	<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic"/>
-        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <meta name="text:GoogleWebFont" content="Gentium Book Basic" />
+    	<meta name="text:GoogleWebFontURL" content="Gentium+Book+Basic" />
+        <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <link rel="alternate" type="application/rss+xml" href="<?php bloginfo( 'rss2_url' ); ?>" />
-        <?php wp_head(); ?> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <?php wp_head(); ?>
     </head>
     <body <?php body_class('cbp-spmenu-push'); ?>>
     	<div class="menuicon">
