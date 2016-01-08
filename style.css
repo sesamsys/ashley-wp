@@ -115,6 +115,12 @@ header a:hover {
   text-decoration: none;
 }
 
+p.wp-caption-text {
+  font-size: 16px;
+  color: #aaa;
+  font-style: italic;
+}
+
 .post img, {
   max-width: 100%;
 }
