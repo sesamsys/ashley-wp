@@ -121,8 +121,9 @@ p.wp-caption-text {
   font-style: italic;
 }
 
-.post img, {
-  max-width: 100%;
+img, video {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
 }
 
 .post iframe, .video object {
