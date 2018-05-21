@@ -121,6 +121,10 @@ p.wp-caption-text {
   font-style: italic;
 }
 
+p.wp-caption {
+  max-width: 100%; /* Adhere to container width. */
+}
+
 img, video {
   height: auto; /* Make sure images are scaled correctly. */
   max-width: 100%; /* Adhere to container width. */
