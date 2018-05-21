@@ -121,7 +121,7 @@ p.wp-caption-text {
   font-style: italic;
 }
 
-p.wp-caption {
+div.wp-caption {
   max-width: 100%; /* Adhere to container width. */
 }
 
