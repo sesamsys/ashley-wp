@@ -130,6 +130,10 @@ img, video {
   max-width: 100%; /* Adhere to container width. */
 }
 
+figcaption {
+  text-align: center; /* centered captions */
+}
+
 .post iframe, .video object {
   width: 100%;
   max-width: 100%;
