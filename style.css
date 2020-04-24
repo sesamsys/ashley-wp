@@ -131,7 +131,7 @@ img, video {
 }
 
 figcaption {
-  text-align: center; /* centered captions */
+  text-align: center;
 }
 
 .post iframe, .video object {
@@ -417,3 +417,23 @@ div.button a {
 .comments .reply a {
   color: #aaa;
 }
+
+    @media (prefers-color-scheme: dark) {
+      body { color: #aaa; background: #000; }
+      a { color: rgb(214, 44, 125); }
+      header p { color: #ddd; }
+      header a, a.post-title { color: #ddd; }
+      a.post-title:hover { color: rgb(214, 44, 125); }
+      p.wp-caption-text { color: #ddd; }
+      .post footer { color: #ddd;}
+      .post footer a { color: #ddd; }
+      .post footer a:hover { color: #fff; }
+      footer .tag-links a { color: #000;}
+      footer .tag-links a:hover { background: rgb(214, 44, 125); }
+      footer .tag-links a:hover:before { border-right-color: rgb(214, 44, 125); }
+      footer .tag-links a:after { background: #000; }
+      input:focus, textarea:focus { border: 1px solid rgb(214, 44, 125); }
+      .comment-form .required { color: rgb(214, 44, 125); }
+      button, input[type="submit"], input[type="button"], input[type="reset"] { color: rgb(214, 44, 125); }
+      ol.comments, ol.comments a { color: #999; }
+    }
