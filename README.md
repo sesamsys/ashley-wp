@@ -1,4 +1,4 @@
-# This is a WordPress port of the Ashley Tumblr theme.
+# This is a WordPress port of the Ashley Tumblr theme
 
 ## Info:
       
