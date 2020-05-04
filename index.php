@@ -23,7 +23,11 @@ get_header(); ?>
 				 	<ul class="small">
 				 		<?php echo get_the_tag_list('<p class="tag-links">',' ','</p>'); ?>
 				 		<!-- Display the date and time as well as a link to other posts by this posts author. -->
-			 			<li><?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?></li>
+			 			<li>
+						 	<time datetime="<?php echo get_the_date('c'); ?>">
+								<?php the_date(); ?> <?php the_time(); ?> by <?php the_author_posts_link(); ?>
+							</time>
+						</li>
 			 			<!-- Display the number of comments. -->
 			 			<li class="comments">
 			 				<a href="<?php comments_link(); ?>">
