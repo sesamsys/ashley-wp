@@ -420,7 +420,7 @@ div.button a {
 }
 
     @media (prefers-color-scheme: dark) {
-      body { color: #aaa; background: #000; }
+      body { color: #aaa; background: #373942; }
       a { color: rgb(214, 44, 125); }
       header p { color: #ddd; }
       header a, a.post-title { color: #ddd; }
@@ -432,7 +432,7 @@ div.button a {
       footer .tag-links a { color: #000;}
       footer .tag-links a:hover { background: rgb(214, 44, 125); }
       footer .tag-links a:hover:before { border-right-color: rgb(214, 44, 125); }
-      footer .tag-links a:after { background: #000; }
+      footer .tag-links a:after { background: #373942; }
       input:focus, textarea:focus { border: 1px solid rgb(214, 44, 125); }
       .comment-form .required { color: rgb(214, 44, 125); }
       button, input[type="submit"], input[type="button"], input[type="reset"] { color: rgb(214, 44, 125); }
